@@ -1,0 +1,307 @@
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "header header header header" "navigation main main main" "navigation statistik section1 section2" "navigation footer footer footer";
+    grid-gap: 1rem;
+    background-color: white;
+}
+
+.header {
+    background-color: whitesmoke;
+    grid-area: header;
+}
+
+.header h1 {
+    color: rgb(14, 56, 134);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    float: left;
+}
+
+.header button {
+    display: inline-block;
+    margin-left: 950px;
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+
+.main {
+    background-color: rgb(32, 102, 207);
+    grid-area: main;
+    padding-top: 30px;
+    align-items: flex-start; /*Sejajarkan elemen teks dan gambar di bagian atas */
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.img-main {
+    display: flex;
+    flex-direction: column; /*Susun teks (h1 dan p) secara vertikal */
+
+}
+
+.main h1 {
+    padding-left: 60px;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main p {
+    padding-left: 60px;
+    color: white;
+    display: flex;
+    margin: 0;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+.main h1, p {
+    text-align: justify;
+}
+
+.main img {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 300px;
+    float: right;
+    margin-bottom: 50px;
+    border: 5px solid white;
+}
+
+.navigation {
+    background: rgb(15, 88, 223);
+    grid-area: navigation;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 20px;
+    position: relative;
+    list-style: none;
+}
+
+.menu li:hover {
+    background-color: rgb(14, 56, 134);
+}
+
+.menu li {
+    float: left;
+    width: 250px;
+    height: 10vh;
+    padding: 0 1.7rem;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    float: left;
+}
+
+.menu li a {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.statistik {
+    background: white;
+    grid-area: statistik;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+.statistik img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.section1 {
+    background: white;
+    grid-area: section1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.section1 div {
+    background: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 9px;
+    height: 15vh;
+    padding: 5px;
+    margin-bottom: 6px;
+}
+
+.hitam {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.htm {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.hit {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.tam {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.biru {
+    color: rgb(68, 172, 233);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.blue {
+    color: rgb(68, 172, 233);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.Sky {
+    color: rgb(68, 172, 233);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.light {
+    color: rgb(68, 172, 233);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.section2 {
+    background: white;
+    grid-area: section2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.section2 div {
+    background: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 8px;
+    height: 15vh;
+    padding: 5px;
+    margin-bottom: 6px;
+}
+
+.black {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.b {
+    color: rgb(68, 172, 233);
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.blek {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.i {
+    color: rgb(68, 172, 233);
+    margin-top: 3px;
+    margin-left: 12px;
+}
+
+.blac {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px
+}
+
+.r {
+    color: rgb(68, 172, 233);
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.blak {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.u {
+    color: rgb(68, 172, 233);
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.footer {
+    background: whitesmoke;
+    grid-area: footer;
+}
+
+.footer h3 {
+    display: flex;
+}
+
+.pertama {
+    display: inline-block;
+}
+
+.pertama a {
+    color: rgb(23, 23, 184);
+}
+
+.kedua {
+    display: inline-block;
+}
+
+.ketiga {
+    display: inline-block;
+}
+
